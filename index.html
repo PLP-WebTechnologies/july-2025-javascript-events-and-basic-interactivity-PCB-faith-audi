@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Pages with JS</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body id="body">
+    <h1 onclick="alert('You clicked the heading')">Javascript Event Handling and Interactive Elemnts</h1>
+    <button onclick="alert('You clicked the button')">Click Me</button>
+    <input type="text" id="inputField" placeholder="Type something" />
+        <div class="box">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button onclick="toggleAccordion(this)">Event Handling</button>
+                    <div class="accordion-content">
+                        <p>JS set up to listen for user actions and respond accordingly.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button onclick="toggleAccordion(this)">Building Interactive Elements</button>
+                    <div class="accordion-content">
+                        <p>My own mini interactive features.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button onclick="toggleAccordion(this)">DOM Manipulation</button>
+                    <div class="accordion-content">
+                        <p>This is DOM manipulation together with events that will make this page dynamic and engaging.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div id="carousel">
+                <img id="carouselImage" src="https://images.pexels.com/photos/31130331/pexels-photo-31130331.jpeg" alt="Carousel Image" />
+                <button id="prevBtn" onclick="previouseImage()">Previous</button>
+                <button id="nextBtn" onclick="nextImage()">Next</button>
+            </div>
+        </div>
+        <!--Form Validation with JS -->
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <span id="nameError" class="error"></span>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <span id="emailError" class="error"></span>
+            <br> 
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+            <span id="password" class="error"></span>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    <script src="js/script.js"></script>
+</body>
+</html>
